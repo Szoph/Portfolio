@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;600&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+* {
+    scroll-behavior: smooth;
+}
+#titles-no-margin {
+    font-family: "MuseoModerno";
+    font-weight: 600;
+    color: #003b36;
+}
+#title-extra {
+    font-family: "MuseoModerno";
+    font-weight: 600;
+    color: #003b36;
+    font-size: 
+}
+#titles {
+    font-family: "MuseoModerno";
+    font-weight: 600;
+    color: #003b36;
+    margin-top: 220px;
+}
+#titles::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+body {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 300;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-property: opacity;
+  }
+
+  body.fade {
+    opacity: 20%;
+}
+#navbar {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 2;
+}
+#navbar,  #bg-main{
+    background-color: white;
+}
+
+#dark-color-text {
+    color: #003b36
+}
+
+#buttons {
+    color: #003b36;
+
+}
+#buttons-current {
+    font-weight: 800;
+    color:#003b36
+}
+#buttons:hover, #buttons-current:hover {
+    background-color: #003b36;
+    color: white
+}
+
+#bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #C4F5DF 0%, #c4f5df 25%, #FEFCD2 51%, #ffffff 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+ 
+
+  .custom-shape-divider-top-1703241207 {
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703241207 svg {
+    position: relative;
+    display: block;
+    width: calc(188% + 1.3px);
+    height: 233px;
+}
+
+.custom-shape-divider-top-1703241207 .shape-fill {
+    fill: #C4F5DF;
+}
+.custom-shape-divider-top-1703241509 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703241509 svg {
+    position: relative;
+    display: block;
+    width: calc(188% + 1.3px);
+    height: 233px;
+}
+
+.custom-shape-divider-top-1703241509 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1703242170 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703242170 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 82px;
+}
+
+.custom-shape-divider-bottom-1703242170 .shape-fill {
+    fill: #C4F5DF;
+}
